@@ -1,0 +1,48 @@
+2024-03-05 21:20:34,831 - RunBot - INFO - Запуск бота!
+2024-03-05 21:24:16,674 - RunBot - INFO - Запуск бота!
+2024-03-05 21:26:33,783 - RunBot - INFO - Запуск бота!
+2024-03-05 21:27:12,952 - RunBot - INFO - Запуск бота!
+2024-03-05 21:29:47,327 - RunBot - INFO - Запуск бота!
+2024-03-05 21:30:45,539 - RunBot - INFO - Запуск бота!
+2024-03-05 21:31:36,351 - RunBot - INFO - Запуск бота!
+2024-03-05 21:32:17,352 - RunBot - INFO - Запуск бота!
+2024-03-05 21:34:34,531 - RunBot - INFO - Запуск бота!
+2024-03-05 21:35:45,909 - RunBot - INFO - Запуск бота!
+2024-03-05 21:38:54,203 - RunBot - INFO - Запуск бота!
+2024-03-05 21:46:21,479 - RunBot - INFO - Запуск бота!
+2024-03-05 21:50:14,382 - RunBot - INFO - Запуск бота!
+2024-03-05 21:52:50,711 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 21:52:50,712 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Рабочий стол/AuthDjangoUser/accounts/bot.py", line 88, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Рабочий стол/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2024-03-05 21:56:12,345 - RunBot - INFO - Запуск бота!
+2024-03-05 22:00:30,144 - RunBot - INFO - Запуск бота!
+2024-03-05 23:33:10,961 - RunBot - ERROR - Ошибка при запуске бота: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)!
+2024-03-06 19:53:42,710 - RunBot - INFO - Запуск бота!
+2024-03-06 19:57:26,578 - RunBot - INFO - Запуск бота!
+2024-03-06 20:11:27,178 - RunBot - INFO - Запуск бота!
+2024-03-06 20:14:18,733 - RunBot - INFO - Запуск бота!
+2024-03-11 13:59:18,584 - RunBot - INFO - Запуск бота!
+2024-03-11 13:59:48,606 - Func start - INFO - Пользователь 5792605910 написал боту start
